@@ -152,6 +152,7 @@
   box-sizing: border-box;
   border: 20px dashed black;
   background-repeat: no-repeat;
+  background-origin: border-box;
 }
 
 .task29 {
@@ -160,6 +161,7 @@
   border: 20px dashed black;
   padding: 20px;
   background-repeat: no-repeat;
+  background-origin: padding-box;
 }
 
 .task30 {
@@ -170,18 +172,30 @@
   font-size: 100px;
   font-weight: 900;
   padding: 60px;
+  background-origin: content-box;
 }
 
 .task31 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
+  border-image-source: linear-gradient(
+    to bottom,
+    blue,
+    green
+  );
 }
 
 .task32 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
+  border-image-source: radial-gradient(
+    closest-side,
+    red 5%,
+    green 15%,
+    blue 60%
+  );
 }
 
 .task33 {
@@ -189,4 +203,5 @@
   box-sizing: border-box;
   border-image-width: 40px;
   border-image-slice: 10;
+  border-image-repeat: stretch;
 }
