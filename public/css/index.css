@@ -66,7 +66,7 @@
 
 .task13 {
   background-image: url('/img/img-400x200.jpg');
-  background-attachment: scroll;
+  background-attachment: local;
 }
 
 .task14 {
